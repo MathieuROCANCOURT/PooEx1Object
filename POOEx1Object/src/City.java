@@ -85,8 +85,8 @@ public class City {
 		this.setNbInhabitants(this.nbInhabitants + gap);
 	}
 
-	public void display() {
-		System.out.println(
-				"ville de " + this.name + " en " + this.country + " ayant " + this.nbInhabitants + " habitants");
+	@Override
+	public String toString() {
+		return "ville de " + this.name + " en " + this.country + " ayant " + this.nbInhabitants + " habitants";
 	}
 }
