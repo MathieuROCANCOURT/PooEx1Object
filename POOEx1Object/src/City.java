@@ -65,4 +65,11 @@ public class City {
 		if (nbInhabitants < 0) throw new RuntimeErrorException(null, "Le nombre d'habitant est négatif.");
 		this.nbInhabitants = nbInhabitants;
 	}
+	
+	/**
+	 * @param gap
+	 */
+	public void changeProgressHabitants(int gap) {
+		this.setNbInhabitants(this.nbInhabitants + gap);
+	}
 }
