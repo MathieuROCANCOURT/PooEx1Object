@@ -9,6 +9,8 @@ import javax.management.RuntimeErrorException;
  * 
  */
 public class City {
+	private static int nbCity = 0;
+
 	private String name;
 	private String country;
 	private int nbInhabitants;
@@ -22,6 +24,7 @@ public class City {
 		this.name = name;
 		this.country = country;
 		setNbInhabitants(nbInhabitants);
+		nbCity += 1;
 	}
 
 	/**
@@ -32,6 +35,7 @@ public class City {
 		this.name = name;
 		setCountry("unknown");
 		this.nbInhabitants = nbInhabitants;
+		nbCity += 1;
 	}
 
 	/**
@@ -76,6 +80,13 @@ public class City {
 		if (nbInhabitants < 0)
 			throw new RuntimeErrorException(null, "Le nombre d'habitant est négatif.");
 		this.nbInhabitants = nbInhabitants;
+	}
+
+	/**
+	 * @return
+	 */
+	public static int getNbCity() {
+		return nbCity;
 	}
 
 	/**
