@@ -30,9 +30,11 @@ public class TestCity {
 		
 		/** Test display method **/
 		toulouse.setNbInhabitants(450000);
-		toulouse.display();
+		//toulouse.display();
 		
 		/** Display the object's reference. **/
 		System.out.println(toulouse); // City@2a139a55
+		
+		
 	}
 }
