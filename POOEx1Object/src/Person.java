@@ -47,25 +47,30 @@ public class Person {
 		this.bornCity = null;
 	}
 
-
+	/**
+	 * @return
+	 */
 	public boolean bornFrance() {
 		return this.bornCity.getCountry().contains("France");
 	}
-	
-	
+
+	public boolean inParis() {
+		return this.address.contains("Paris");
+	}
+
 	@Override
 	public String toString() {
-		String display = "Person [lastName=" + this.lastName + ", firstName=" + this.firstName + ", age=" + this.old
-				+ ", address=" + this.address + "]";
-		
+		String display = this.lastName + " , " + this.firstName + " , " + this.old + " , habitant " + this.address;
+
 		if (this.bornCity != null) {
-			display += "Ville de naissance :" + this.bornCity.getName() + " , " + this.bornCity.getCountry();
-			
+			display += " , Ville de naissance : " + this.bornCity.getName() + " , " + this.bornCity.getCountry();
+
 			if (this.bornCity.getNbInhabitants() != 0) {
-				display += " , population " + this.bornCity.getName() + " " + this.bornCity.getNbInhabitants() + " d'habitants";
+				display += " , population " + this.bornCity.getName() + " " + this.bornCity.getNbInhabitants()
+						+ " d'habitants";
 			}
 		}
-		
+
 		return display;
 	}
 }
