@@ -1,3 +1,4 @@
+
 /**
  * 
  */
@@ -72,14 +73,20 @@ public class City {
 	 * @param nbInhabitants the nbInhabitants to set
 	 */
 	public void setNbInhabitants(int nbInhabitants) {
-		if (nbInhabitants < 0) throw new RuntimeErrorException(null, "Le nombre d'habitant est négatif.");
+		if (nbInhabitants < 0)
+			throw new RuntimeErrorException(null, "Le nombre d'habitant est négatif.");
 		this.nbInhabitants = nbInhabitants;
 	}
-	
+
 	/**
 	 * @param gap
 	 */
 	public void changeProgressHabitants(int gap) {
 		this.setNbInhabitants(this.nbInhabitants + gap);
+	}
+
+	public void display() {
+		System.out.println(
+				"ville de " + this.name + " en " + this.country + " ayant " + this.nbInhabitants + " habitants");
 	}
 }
