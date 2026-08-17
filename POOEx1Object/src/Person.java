@@ -47,6 +47,12 @@ public class Person {
 		this.bornCity = null;
 	}
 
+
+	public boolean bornFrance() {
+		return this.bornCity.getCountry().contains("France");
+	}
+	
+	
 	@Override
 	public String toString() {
 		String display = "Person [lastName=" + this.lastName + ", firstName=" + this.firstName + ", age=" + this.old
