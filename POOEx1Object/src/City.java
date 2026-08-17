@@ -2,6 +2,8 @@
  * 
  */
 
+import javax.management.RuntimeErrorException;
+
 /**
  * 
  */
@@ -18,7 +20,7 @@ public class City {
 	public City(String name, String country, int nbInhabitants) {
 		this.name = name;
 		this.country = country;
-		this.nbInhabitants = nbInhabitants;
+		setNbInhabitants(nbInhabitants);
 	}
 
 	/**
@@ -29,24 +31,10 @@ public class City {
 	}
 
 	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	/**
 	 * @return the country
 	 */
 	public String getCountry() {
 		return country;
-	}
-
-	/**
-	 * @param country the country to set
-	 */
-	public void setCountry(String country) {
-		this.country = country;
 	}
 
 	/**
@@ -57,9 +45,24 @@ public class City {
 	}
 
 	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * @param country the country to set
+	 */
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	/**
 	 * @param nbInhabitants the nbInhabitants to set
 	 */
 	public void setNbInhabitants(int nbInhabitants) {
+		if (nbInhabitants < 0) throw new RuntimeErrorException(null, "Le nombre d'habitant est négatif.");
 		this.nbInhabitants = nbInhabitants;
 	}
 }
