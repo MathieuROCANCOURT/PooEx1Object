@@ -27,5 +27,12 @@ public class TestCity {
 				+ "] [nombre d'habitants : " + rabatWithoutCountry.getNbInhabitants() + "]");
 		System.out.println("[ville : " + rabat.getName() + "] [pays : " + rabat.getCountry()
 				+ "] [nombre d'habitants : " + rabat.getNbInhabitants() + "]");
+		
+		/** Test display method **/
+		toulouse.setNbInhabitants(450000);
+		toulouse.display();
+		
+		/** Display the object's reference. **/
+		System.out.println(toulouse); // City@2a139a55
 	}
 }
