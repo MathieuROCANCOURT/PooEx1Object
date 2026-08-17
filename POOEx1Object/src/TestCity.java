@@ -35,6 +35,8 @@ public class TestCity {
 		/** Display the object's reference. **/
 		System.out.println(toulouse); // City@2a139a55
 		
+		/** Display the number of City instances. **/
+		System.out.println(City.getNbCity());
 		
 	}
 }
