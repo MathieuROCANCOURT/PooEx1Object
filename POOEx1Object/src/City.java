@@ -26,6 +26,17 @@ public class City {
 		setNbInhabitants(nbInhabitants);
 		nbCity += 1;
 	}
+	
+	/**
+	 * @param name
+	 * @param country
+	 */
+	public City(String name, String country) {
+		this.name = name;
+		this.country = country;
+		setNbInhabitants(0);
+		nbCity += 1;
+	}
 
 	/**
 	 * @param name
