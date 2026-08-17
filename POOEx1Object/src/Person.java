@@ -4,8 +4,8 @@
 public class Person {
 	private String lastName;
 	private String firstName;
-	private String old;
-	private String adress;
+	private int old;
+	private String address;
 
 	/**
 	 * @param lastName
@@ -13,11 +13,11 @@ public class Person {
 	 * @param old
 	 * @param adress
 	 */
-	public Person(String lastName, String firstName, String old, String adress) {
+	public Person(String lastName, String firstName, int old, String address) {
 		this.lastName = lastName;
 		this.firstName = firstName;
 		this.old = old;
-		this.adress = adress;
+		this.address = address;
 	}
 
 	/**
@@ -25,11 +25,11 @@ public class Person {
 	 * @param firstName
 	 * @param old
 	 */
-	public Person(String lastName, String firstName, String old) {
+	public Person(String lastName, String firstName, int old) {
 		this.lastName = lastName;
 		this.firstName = firstName;
 		this.old = old;
-		this.adress = "unknown";
+		this.address = "unknown";
 	}
 
 	/**
@@ -39,9 +39,13 @@ public class Person {
 	public Person(String lastName, String firstName) {
 		this.lastName = lastName;
 		this.firstName = firstName;
-		this.old = "unknown";
-		this.adress = "unknown";
+		this.old = 0;
+		this.address = "unknown";
 	}
 
-	
+	@Override
+	public String toString() {
+		return "Person [lastName=" + this.lastName + ", firstName=" + this.firstName + ", age=" + this.old
+				+ ", address=" + this.address + "]";
+	}
 }
