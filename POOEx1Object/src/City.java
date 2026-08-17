@@ -24,6 +24,15 @@ public class City {
 	}
 
 	/**
+	 * @param name
+	 * @param nbInhabitants
+	 */
+	public City(String name, int nbInhabitants) {
+		this.name = name;
+		this.nbInhabitants = nbInhabitants;
+	}
+
+	/**
 	 * @return the name
 	 */
 	public String getName() {
