@@ -29,6 +29,7 @@ public class City {
 	 */
 	public City(String name, int nbInhabitants) {
 		this.name = name;
+		setCountry("unknown");
 		this.nbInhabitants = nbInhabitants;
 	}
 
