@@ -4,7 +4,9 @@
 import javax.management.RuntimeErrorException;
 
 /**
+ * Class city to create with the country and the number of inhabitants.
  * 
+ * @author RocancourtM
  */
 public class City {
 	private static int nbCity = 0;
