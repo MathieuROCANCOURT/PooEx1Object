@@ -1,5 +1,8 @@
 /**
+ * A person has a first name and a last name. Age, address, and city of born are
+ * optional.
  * 
+ * @author RocancourtM
  */
 public class Person {
 	private String lastName;
@@ -12,7 +15,7 @@ public class Person {
 	 * @param lastName
 	 * @param firstName
 	 * @param old
-	 * @param adress
+	 * @param address
 	 */
 	public Person(String lastName, String firstName, int old, String address, City bornCity) {
 		this.lastName = lastName;
