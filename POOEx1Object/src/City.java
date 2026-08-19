@@ -56,21 +56,27 @@ public class City {
 	}
 
 	/**
-	 * @return the name
+	 * Get the city name.
+	 * 
+	 * @return City name.
 	 */
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * @return the country
+	 * Get back the country from the city.
+	 * 
+	 * @return the country.
 	 */
 	public String getCountry() {
 		return country;
 	}
 
 	/**
-	 * @return the nbInhabitants
+	 * Get the number of inhabitants.
+	 * 
+	 * @return Number of inhabitants.
 	 */
 	public int getNbInhabitants() {
 		return nbInhabitants;
