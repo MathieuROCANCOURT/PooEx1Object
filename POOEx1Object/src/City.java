@@ -113,7 +113,9 @@ public class City {
 	}
 
 	/**
-	 * @return
+	 * Get the number of instances of City.
+	 * 
+	 * @return number of instances of City.
 	 */
 	public static int getNbCity() {
 		return nbCity;
