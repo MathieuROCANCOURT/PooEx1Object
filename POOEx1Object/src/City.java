@@ -122,7 +122,9 @@ public class City {
 	}
 
 	/**
-	 * @param gap
+	 * Changes in the city’s population.
+	 * 
+	 * @param gap The value used to increase or decrease the number of inhabitants.
 	 */
 	public void changeProgressHabitants(int gap) {
 		this.setNbInhabitants(this.nbInhabitants + gap);
