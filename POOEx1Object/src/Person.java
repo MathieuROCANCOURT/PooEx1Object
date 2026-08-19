@@ -58,7 +58,9 @@ public class Person {
 	}
 
 	/**
-	 * @return
+	 * Check if the character is born in France.
+	 * 
+	 * @return true if born city is France, else false.
 	 */
 	public boolean bornFrance() {
 		return this.bornCity.getCountry().contains("France");
