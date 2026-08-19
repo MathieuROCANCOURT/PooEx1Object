@@ -5,7 +5,9 @@
  */
 public class TestCity {
 	/**
-	 * @param args
+	 * Main program
+	 * 
+	 * @param args Arguments to command line.
 	 */
 	public static void main(String[] args) {
 		City toulouse = new City("Toulouse", "France", 200);
