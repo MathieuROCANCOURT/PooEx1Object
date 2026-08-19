@@ -104,7 +104,7 @@ public class City {
 	 * Set the number of inhabitants.
 	 * 
 	 * @param nbInhabitants The nbInhabitants to set.
-	 * @throws Throw an exception if the number of inhabitants is less than 0.
+	 * @throws RuntimeErrorException if the number of inhabitants is less than 0.
 	 */
 	public void setNbInhabitants(int nbInhabitants) {
 		if (nbInhabitants < 0)
