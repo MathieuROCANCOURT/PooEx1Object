@@ -34,7 +34,6 @@ public class Person {
 	 * @param lastName  Last name.
 	 * @param firstName First name.
 	 * @param old       Age.
-	 * @implNote address is "unknown" and bornCity is null.
 	 */
 	public Person(String lastName, String firstName, int old) {
 		this.lastName = lastName;
@@ -49,7 +48,6 @@ public class Person {
 	 * 
 	 * @param lastName  Last name.
 	 * @param firstName First name.
-	 * @implNote age is equal to 0, address is "unknown" and bornCity is null.
 	 */
 	public Person(String lastName, String firstName) {
 		this.lastName = lastName;
