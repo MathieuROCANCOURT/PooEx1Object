@@ -83,21 +83,28 @@ public class City {
 	}
 
 	/**
-	 * @param name the name to set
+	 * Set the name city.
+	 * 
+	 * @param name City name to set.
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * @param country the country to set
+	 * Set the country name.
+	 * 
+	 * @param country Country to set.
 	 */
 	public void setCountry(String country) {
 		this.country = country;
 	}
 
 	/**
-	 * @param nbInhabitants the nbInhabitants to set
+	 * Set the number of inhabitants.
+	 * 
+	 * @param nbInhabitants The nbInhabitants to set.
+	 * @throws Throw an exception if the number of inhabitants is less than 0.
 	 */
 	public void setNbInhabitants(int nbInhabitants) {
 		if (nbInhabitants < 0)
