@@ -5,6 +5,13 @@
  */
 public class TestCity {
 	/**
+	 * Constructor TestCity.
+	 */
+	public TestCity() {
+		super();
+	};
+
+	/**
 	 * Main program
 	 * 
 	 * @param args Arguments to command line.
@@ -31,14 +38,14 @@ public class TestCity {
 				+ "] [nombre d'habitants : " + rabatWithoutCountry.getNbInhabitants() + "]");
 		System.out.println("[ville : " + rabat.getName() + "] [pays : " + rabat.getCountry()
 				+ "] [nombre d'habitants : " + rabat.getNbInhabitants() + "]");
-		
+
 		/** Test display method **/
 		toulouse.setNbInhabitants(450000);
-		//toulouse.display();
-		
+		// toulouse.display();
+
 		/** Display the object's reference. **/
 		System.out.println(toulouse); // City@2a139a55
-		
+
 		/** Display the number of City instances. **/
 		System.out.println(City.getNbCity()); // 3
 	}
