@@ -66,6 +66,11 @@ public class Person {
 		return this.bornCity.getCountry().contains("France");
 	}
 
+	/**
+	 * Check if the address of the character is in Paris.
+	 * 
+	 * @return true if address contains Paris, else false.
+	 */
 	public boolean inParis() {
 		return this.address.contains("Paris");
 	}
