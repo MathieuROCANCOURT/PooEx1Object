@@ -1,8 +1,6 @@
-
 /**
  * 
  */
-
 import javax.management.RuntimeErrorException;
 
 /**
@@ -12,8 +10,8 @@ public class City {
 	private static int nbCity = 0;
 
 	private String name;
-	private String country;
-	private int nbInhabitants;
+	private String country = "unknown";
+	private int nbInhabitants = 0;
 
 	/**
 	 * @param name
@@ -24,7 +22,7 @@ public class City {
 		this.name = name;
 		this.country = country;
 		setNbInhabitants(nbInhabitants);
-		nbCity += 1;
+		nbCity++;
 	}
 	
 	/**
@@ -34,8 +32,7 @@ public class City {
 	public City(String name, String country) {
 		this.name = name;
 		this.country = country;
-		setNbInhabitants(0);
-		nbCity += 1;
+		nbCity++;
 	}
 
 	/**
@@ -44,9 +41,8 @@ public class City {
 	 */
 	public City(String name, int nbInhabitants) {
 		this.name = name;
-		setCountry("unknown");
 		this.nbInhabitants = nbInhabitants;
-		nbCity += 1;
+		nbCity++;
 	}
 
 	/**
