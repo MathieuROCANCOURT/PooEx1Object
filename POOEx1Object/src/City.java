@@ -9,6 +9,7 @@ import javax.management.RuntimeErrorException;
  * @author RocancourtM
  */
 public class City {
+	/** Count the number of instances of City. */
 	private static int nbCity = 0;
 
 	private String name;
