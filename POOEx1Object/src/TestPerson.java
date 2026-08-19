@@ -1,8 +1,9 @@
 /**
+ * Class to test Person constructors and methods.
  * 
+ * @author RocancourtM
  */
 public class TestPerson {
-
 	/**
 	 * Main program
 	 * 
@@ -30,8 +31,7 @@ public class TestPerson {
 			System.out.println(person);
 		}
 
-		System.out.println("--------------------------------\n"
-				+ "Liste après notre filtre");
+		System.out.println("--------------------------------\n" + "Liste après notre filtre");
 		for (Person person : personalitiesList) {
 			if (person.bornFrance() || person.inParis()) {
 				System.out.println(person);
