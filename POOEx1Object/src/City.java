@@ -1,3 +1,4 @@
+
 /**
  * 
  */
@@ -17,9 +18,11 @@ public class City {
 	private int nbInhabitants = 0;
 
 	/**
-	 * @param name
-	 * @param country
-	 * @param nbInhabitants
+	 * Constructor with name of city, the country and the number of inhabitants.
+	 * 
+	 * @param name          City name.
+	 * @param country       Country where is the city.
+	 * @param nbInhabitants Number of inhabitants of the city.
 	 */
 	public City(String name, String country, int nbInhabitants) {
 		this.name = name;
@@ -27,10 +30,12 @@ public class City {
 		setNbInhabitants(nbInhabitants);
 		nbCity++;
 	}
-	
+
 	/**
-	 * @param name
-	 * @param country
+	 * Constructor with name of city and the country .
+	 * 
+	 * @param name    City name.
+	 * @param country Country where is the city.
 	 */
 	public City(String name, String country) {
 		this.name = name;
@@ -39,8 +44,10 @@ public class City {
 	}
 
 	/**
-	 * @param name
-	 * @param nbInhabitants
+	 * Constructor with name of city and the number of inhabitants.
+	 * 
+	 * @param name          City name.
+	 * @param nbInhabitants Number of inhabitants of the city.
 	 */
 	public City(String name, int nbInhabitants) {
 		this.name = name;
