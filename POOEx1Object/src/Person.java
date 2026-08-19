@@ -12,10 +12,13 @@ public class Person {
 	private City bornCity;
 
 	/**
-	 * @param lastName
-	 * @param firstName
-	 * @param old
-	 * @param address
+	 * Create a person with last name, first name, age, address and city of birth.
+	 * 
+	 * @param lastName  Last name.
+	 * @param firstName First name.
+	 * @param old       Age.
+	 * @param address   Address of the person.
+	 * @param bornCity  City of birth.
 	 */
 	public Person(String lastName, String firstName, int old, String address, City bornCity) {
 		this.lastName = lastName;
@@ -26,9 +29,12 @@ public class Person {
 	}
 
 	/**
-	 * @param lastName
-	 * @param firstName
-	 * @param old
+	 * Create a person with last name, first name and age.
+	 * 
+	 * @param lastName  Last name.
+	 * @param firstName First name.
+	 * @param old       Age.
+	 * @implNote address is "unknown" and bornCity is null.
 	 */
 	public Person(String lastName, String firstName, int old) {
 		this.lastName = lastName;
@@ -39,8 +45,11 @@ public class Person {
 	}
 
 	/**
-	 * @param lastName
-	 * @param firstName
+	 * Create a person with last name and first name.
+	 * 
+	 * @param lastName  Last name.
+	 * @param firstName First name.
+	 * @implNote age is equal to 0, address is "unknown" and bornCity is null.
 	 */
 	public Person(String lastName, String firstName) {
 		this.lastName = lastName;
