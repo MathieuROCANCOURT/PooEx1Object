@@ -5,6 +5,13 @@
  */
 public class TestPerson {
 	/**
+	 * Constructor TestPerson.
+	 */
+	public TestPerson() {
+		super();
+	}
+
+	/**
 	 * Main program
 	 * 
 	 * @param args Arguments to command line.
