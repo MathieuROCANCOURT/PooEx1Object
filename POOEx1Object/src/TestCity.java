@@ -1,5 +1,7 @@
 /**
+ * Class to test City constructor and methods.
  * 
+ * @author RocancourtM
  */
 public class TestCity {
 	/**
@@ -36,7 +38,6 @@ public class TestCity {
 		System.out.println(toulouse); // City@2a139a55
 		
 		/** Display the number of City instances. **/
-		System.out.println(City.getNbCity());
-		
+		System.out.println(City.getNbCity()); // 3
 	}
 }
